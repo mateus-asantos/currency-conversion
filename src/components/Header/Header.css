@@ -1,0 +1,25 @@
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Roboto;
+}
+
+.HeaderContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.DateTime{
+    font-size: 21px;
+    line-height: 21px;
+    color: #45505E;
+}
+
+.DataOriginInfo{
+    font-size: 14px;
+    line-height: 16px;
+    color: #8C9CAD;
+}
