@@ -27,7 +27,8 @@ function App() {
   return (
     <div className="App">
       <Header
-        fetchInfo={quotationRate}
+        quotation={quotationRate ? parseFloat(quotationRate.ask).toFixed(2) : 'loading'}
+        fetchDateTime={quotationRate ? quotationRate.create_date : 0}
       />
       <ConversionForm
         USDvalue={quotationRate ? parseFloat(quotationRate.ask) : 0}
