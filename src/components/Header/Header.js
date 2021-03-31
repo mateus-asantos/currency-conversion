@@ -4,9 +4,13 @@ import 'moment/locale/pt-br';
 import './Header.css';
 import mainLogo from './MainLogo.png';
 
-function Header() {
+function Header(fetchDateTime) {
   moment.locale('pt-br');
-  const currentDate = moment().format('LL | HH:mm UTC');
+  let currentDate = '';
+
+  if (fetchDateTime) {
+    currentDate = moment(fetchDateTime).format('LL | HH:mm UTC');
+  }
 
   return (
     <header className="Header">
