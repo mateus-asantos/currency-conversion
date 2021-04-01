@@ -4,9 +4,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url('./Mask.png') no-repeat right top;
+  height: 90vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root{
+  background: url('./Graph.png') no-repeat;
+  background-position-x: calc(100% - 250px);
+  background-position-y: calc(50% + 60px);
+}
+
+@media only screen and (max-width: 900px){
+  body{
+    background-position: 20%;
+  }
+
+  #root{
+    height: 90vh;
+    background-position-x: calc(10% + 150px);
+    background-position-y: calc(50% + 290px);
+  }
 }

@@ -1,4 +1,11 @@
 .App {
   max-width: 540px;
-  margin: 64px auto auto 64px
+  margin: 64px auto auto 64px;
+  
+}
+
+@media only screen and (max-width: 900px){
+  .App{
+    margin: 10%;
+  }
 }
