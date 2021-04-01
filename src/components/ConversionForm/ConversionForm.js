@@ -7,6 +7,7 @@ import Results from './Results/Results';
 function ConversionForm({ USDvalue }) {
   const [formData, setFormData] = useState({});
 
+  // letting the setFormData function be accessible from the child
   const backButton = () => setFormData({});
 
   if (Object.keys(formData).length === 0) {

@@ -7,6 +7,7 @@ import { QUOTATION_URL } from './constants';
 function App() {
   const [quotationRate, setQuotationRate] = useState();
 
+  // Getting info from the API
   const fetchQuotation = async () => {
     try {
       const result = await fetch(QUOTATION_URL);
