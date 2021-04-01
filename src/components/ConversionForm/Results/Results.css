@@ -1,0 +1,39 @@
+.Results button{
+  width: 120px;
+  height: 56px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  border: 1px solid #D7E0EB;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 4px rgba(13, 17, 27, 0.08);
+  border-radius: 8px;
+  color: #2E3742;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.ResultTitle{
+  color: #45505E;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  margin: 32px 0 10px 0;
+}
+
+.ResultValue{
+  font-size: 64px;
+  line-height: 80px;
+  color: #00AB63;
+  margin-bottom: 32px;  
+}
+
+.ResultDetails{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  color: #6E7E90;
+}

@@ -1,0 +1,74 @@
+.ConversionForm{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.Type{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 32px 20px 0 0;
+}
+
+.typeText{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2E3742;
+  width: 100%;
+  margin: 0 0 16px 0;
+}
+
+
+.ConversionForm label{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2E3742;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0 0;
+}
+
+.ConversionForm input{
+  padding: 15px;
+  width: 168px;
+  height: 56px;
+  background: #FFFFFF;
+  border: 1px solid #D7E0EB;
+  box-sizing: border-box;
+  border-radius: 4px;
+  filter: drop-shadow(0px 8px 4px rgba(13, 17, 27, 0.08));
+}
+
+.ConversionForm input[type="radio"]{
+  width: unset;
+  height: unset;
+  background-color: #008B57;
+}
+
+.Type label{
+  flex-direction: row;
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
+
+.ConversionForm button{
+  width: 149px;
+  height: 56px;
+  color: #FFFFFF;
+  background: #00AB63;
+  font-size: 16px;
+  border: 1px solid #008B57;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 4px rgba(13, 17, 27, 0.08);
+  border-radius: 8px;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

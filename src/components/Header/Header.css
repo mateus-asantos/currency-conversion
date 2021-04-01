@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    font-family: Roboto;
 }
 
 .HeaderContainer{
@@ -12,10 +11,16 @@
     justify-content: flex-start;
 }
 
-.DateTime{
+.Quotation{
     font-size: 21px;
     line-height: 21px;
     color: #45505E;
+}
+
+.DateTime{
+    font-size: 14px;
+    line-height: 16px;
+    color: #8C9CAD;
 }
 
 .DataOriginInfo{

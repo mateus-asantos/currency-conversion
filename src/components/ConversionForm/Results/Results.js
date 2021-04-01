@@ -1,6 +1,8 @@
 import React from 'react';
+import './Results.css';
 import PropTypes from 'prop-types';
 import { OPERATION_TYPES, IOF_VALUES } from '../../../constants';
+import buttonIcon from './buttonIcon.svg';
 
 function Results({ formData, USDvalue, handleBack }) {
   const dolarTotalWithTax = () => (
@@ -29,27 +31,28 @@ function Results({ formData, USDvalue, handleBack }) {
   return (
     <div className="Results">
       <button type="button" onClick={() => handleBack()}>
+        <img src={buttonIcon} alt="icon" />
         Voltar
       </button>
       <div className="ResultTitle">
         O resultado do cálculo é
       </div>
       <div className="ResultValue">
-        R$
+        R$&nbsp;
         {realWithTax().toFixed(2)}
       </div>
       <div className="ResultDetails">
-        Compra de &nbsp;
+        Compra de&nbsp;
         <b>
           $
           {formData.dolar}
+          &nbsp;
         </b>
-        &nbsp;
         (
         R$
         {realTotalWithoutTax().toFixed(2)}
         )
-        com taxa de &nbsp;
+        com taxa de&nbsp;
         <b>
           {formData.tax}
           %

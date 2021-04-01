@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Form.css';
 import PropTypes from 'prop-types';
 import { OPERATION_TYPES } from '../../../constants';
+import buttonIcon from './buttonIcon.svg';
 
 function Form({ submitForm }) {
   const [formData, setFormData] = useState({
@@ -48,7 +49,7 @@ function Form({ submitForm }) {
             id="type"
             type="radio"
             value={OPERATION_TYPES.MONEY}
-            checked
+            defaultChecked
           />
           Dinheiro
         </label>
@@ -64,7 +65,10 @@ function Form({ submitForm }) {
         </label>
       </div>
 
-      <input type="button" value="Converter" onClick={() => submitForm(formData)} />
+      <button type="button" onClick={() => submitForm(formData)}>
+        <img src={buttonIcon} alt="icon" />
+        Converter
+      </button>
 
     </div>
   );
