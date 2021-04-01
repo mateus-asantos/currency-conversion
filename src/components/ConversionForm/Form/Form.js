@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import InputMask from 'react-input-mask';
 import './Form.css';
 import PropTypes from 'prop-types';
 import { OPERATION_TYPES } from '../../../constants';
@@ -13,27 +14,34 @@ function Form({ submitForm }) {
 
   return (
     <div className="ConversionForm">
-      <label htmlFor="dolar">
+
+      <div className="CurrencyInput">
         Dólar
-        <input
-          type="number"
+        <InputMask
+          mask="$99.99"
           id="dolar"
           placeholder="$ 1.00"
-          onChange={(e) => setFormData({ ...formData, dolar: parseFloat(e.target.value) })}
+          onChange={(e) => setFormData({
+            ...formData,
+            dolar: parseFloat(e.target.value.substring(1)),
+          })}
         />
-      </label>
+      </div>
 
-      <label htmlFor="tax">
+      <div className="TaxInput">
         Taxa do estado
-        <input
-          type="number"
+        <InputMask
+          mask="99.9%"
           id="tax"
           placeholder="0 %"
           min="0"
           max="100"
-          onChange={(e) => setFormData({ ...formData, tax: parseFloat(e.target.value) })}
+          onChange={(e) => setFormData({
+            ...formData,
+            tax: parseFloat(e.target.value),
+          })}
         />
-      </label>
+      </div>
 
       <div
         className="Type"
