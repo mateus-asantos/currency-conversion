@@ -52,11 +52,12 @@ function Results({ formData, USDvalue, handleBack }) {
         R$
         {realTotalWithoutTax().toFixed(2)}
         )
-        com taxa de&nbsp;
+        (taxa de&nbsp;
         <b>
           {formData.tax}
           %
         </b>
+        )
         <div className="ResultIOFinfo">
           IOF para compras em&nbsp;
           {formData.operation_type === OPERATION_TYPES.MONEY ? 'dinheiro' : 'cartão de crédito'}
