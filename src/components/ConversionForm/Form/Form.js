@@ -17,6 +17,7 @@ function Form({ submitForm }) {
         <input
           type="number"
           id="dolar"
+          placeholder="$ 1.00"
           onChange={(e) => setFormData({ ...formData, dolar: parseFloat(e.target.value) })}
         />
       </label>
@@ -26,6 +27,9 @@ function Form({ submitForm }) {
         <input
           type="number"
           id="tax"
+          placeholder="0 %"
+          min="0"
+          max="100"
           onChange={(e) => setFormData({ ...formData, tax: parseFloat(e.target.value) })}
         />
       </label>
@@ -44,6 +48,7 @@ function Form({ submitForm }) {
             id="type"
             type="radio"
             value={OPERATION_TYPES.MONEY}
+            checked
           />
           Dinheiro
         </label>

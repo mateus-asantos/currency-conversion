@@ -7,10 +7,12 @@ import Results from './Results/Results';
 function ConversionForm({ USDvalue }) {
   const [formData, setFormData] = useState({});
 
+  const backButton = () => setFormData({});
+
   if (Object.keys(formData).length === 0) {
     return (<Form submitForm={setFormData} />);
   }
-  return (<Results formData={formData} USDvalue={USDvalue} />);
+  return (<Results formData={formData} USDvalue={USDvalue} handleBack={backButton} />);
 }
 
 ConversionForm.propTypes = {
